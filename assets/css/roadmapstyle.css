@@ -1,0 +1,405 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+:root{
+    --warna-utama:#00fa9a;
+    --warna-bg:#f5f5f5;
+    --warna-contras:#f5a352;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x:hidden;
+
+    background-color: var(--warna-bg);
+}
+nav{
+    background-color: var(--warna-utama);
+   
+}
+.navbar-brand{
+    font-size: 28px;
+    color:#fff!important;
+}
+.nav-link{
+    font-size: 18px;
+    margin-right: 10px;
+    color:#fff!important;
+}
+/* btn */
+.btn:focus{
+    outline:none;
+    border:none;
+}
+/* button hamburger */
+.navbar-toggler{
+    border:none;
+}
+.navbar-toggler:focus{
+    border:none;
+    outline: none;
+}
+
+.navbar-toggler i{
+    font-size: 36px;
+    color: #fff;
+}
+.navbar-nav .btn{
+    background-color: var(--warna-contras);
+    color:#fff;
+    outline:none;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+.navbar-nav .btn:focus{
+    outline:none;
+    border:none;
+}
+
+/* jumbotron */
+.jumbotron{
+    height:70vh;
+    background-color: var(--warna-utama);
+    color:#fff;
+    text-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+
+}
+.banner{
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron .display-4{
+    font-size: 42px;
+}
+
+.jumbotron-img img{
+    width:90%;
+    position: relative;
+    margin-left: 30px;
+
+}
+
+/* search-box */
+.search-box{
+    background-color: #fff;
+    width:100%;
+    padding:6px;
+    border-radius: 10px;
+}
+.search-box input{
+    background-color: transparent;
+    outline:none;
+    border:none;
+    width:70%;
+    margin-left: 10px;
+}
+.search-box .btn{
+    outline:none;
+    width:20%;
+    background-color: var(--warna-contras);
+    color:#fff;
+    margin-left: 15px;
+}
+
+/* roadmaps */
+#roadmap .title-roadmaps{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+#roadmap .title-roadmaps::after{
+    content:'';
+    width:20%;
+    display: block;
+    height:3px;
+    margin-top: 4px;
+    border-radius: 4px;
+    background-color: var(--warna-contras);
+}
+#roadmap .container{
+    padding:50px 0;
+}
+
+#roadmap .road-content{
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 6px rgba(179, 179, 179, 0.46);
+    cursor: pointer;
+    background-color: rgba(255,247,247);
+    height:auto;
+    width:100%;
+    margin-top:30px;
+}
+#roadmap .road-content:hover{
+
+    box-shadow: none;
+}
+#roadmap .roadDeskripsi{
+    padding:30px;
+}
+#roadmap .roadDeskripsi h4{
+    font-weight: bold;
+} 
+#roadmap .road-box:nth-child(n+7){
+    display: none;
+}
+#roadmap .button-load button{
+    outline:none;
+    border:none;
+    background-color: var(--warna-contras);
+    color:#fff !important;
+    padding:6px;
+    width:120px;
+    border-radius: 4px;
+}
+#roadmap .button-load button:hover{
+    opacity: .9;
+}
+/* footer */
+#footer{
+	background-color: #333;
+	color:#e4dada;
+	padding:6vw;
+	width:100%;
+	height:auto;
+	margin-top: 40px;
+}
+
+.copy{
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+
+#footer a{
+	text-decoration: none;
+	color:#e7e7e7aa;
+
+}
+
+.detail-footer{
+
+    margin-top: 0px !important;
+}
+
+.list-footer .head{
+	margin-bottom:10px;
+
+	font-size: 18px;
+	line-height: 40px;
+}
+.list-footer ul li{
+	margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet version */
+@media (min-width: 577px) { 
+    nav{
+        background-color: var(--warna-bg);
+    }
+    .navbar-brand{
+        color:#333 !important;
+    }
+    .navbar-nav .nav-link{
+        color:#333 !important;
+    }
+    .navbar-nav .nav-link:hover{
+        color:var(--warna-utama) !important;
+    }
+    .navbar-toggler i{
+        color:#333;
+    }
+    .jumbotron{
+        height:40vh;
+    }
+    .jumbotron .display-4{
+        font-size: 36px;
+    }
+    .search-box .btn{
+        margin-left: 15px;
+    }
+    .banner-info{
+        margin-top:-20px;
+    }
+    /* roadmaps */
+    #roadmap{
+        margin-top: 20px;
+    }
+    
+   /* footer */
+   .info-footer{
+    flex-direction: column;
+}
+.info-footer .detail-footer{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+}
+
+
+
+
+
+
+
+
+/* mobile version */
+@media (max-width: 576px){
+    nav{
+        background-color: var(--warna-bg);
+    }
+    
+#roadmap .road-content{
+    width: 80%;
+    margin:20px auto;
+}
+    .navbar-brand{
+        color:#333 !important;
+    }
+    .navbar-nav .nav-link{
+        color:#333 !important;
+    }
+    .navbar-nav .nav-link:hover{
+        color:var(--warna-utama) !important;
+    }
+    .navbar-toggler i{
+        color:#333;
+    }
+    .jumbotron .display-4{
+        font-size: 32px;
+    }
+    .banner-info{
+        padding:20px;
+    }
+    .jumbotron-img{
+        margin-top: 10px;
+    }
+    .search-box .btn{
+        margin-left: 13px;
+    }
+    #roadmap{
+        margin-top: 165px;
+    }
+    #roadmap .road-box:nth-child(n+4){
+        display: none;
+    }
+    #roadmap .title-roadmaps{
+        text-transform: none;
+        font-size: 24px;
+        text-align: center;
+    }
+    #roadmap .title-roadmaps::after{
+        margin:0 auto;
+        width:40%;
+        margin-top: 10px;
+    }
+    /* footer */
+    #footer{
+        height:100%;
+    }
+    #footer a{
+        text-decoration: none;
+        color:#e7e7e7aa;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+/* desktop version */
+@media (min-width: 992px){
+    nav{
+        background-color: var(--warna-utama);
+    }
+    .navbar-brand{
+        color:#fff !important;
+    }
+    .navbar-nav .nav-link{
+        color:#fff !important;
+    }
+    .navbar-toggler i{
+        color:#fff;
+    }
+    .navbar-nav .nav-link:hover{
+        color:#f5f5f5 !important;
+    }
+    .nav-link:hover::after{
+        content:'';
+        background-color: var(--warna-contras);
+        display: block;
+        height:3px;
+        width:10px;
+        margin:0 auto;
+        margin-bottom: -14px;
+        color:#f5f5f5;
+        
+    }
+    /* jumbotron */
+    .jumbotron{
+        height:70vh;
+    }
+    .banner-info{
+        margin-top: -100px;
+    }
+    /* seacrhbox */
+    .search-box{
+        width:80%;
+    }
+    .search-box input{
+        width: 80%;
+    }
+    .search-box .btn{
+        outline:none;
+        width:10%;
+        background-color: var(--warna-contras);
+        color:#fff;
+        margin-left: 25px;
+    }
+    #footer{
+        background-color: #333;
+        color:#fff;
+        width:100%;
+        height:auto;
+    }
+   
+    #footer .info-footer{
+        
+        flex-direction: row;
+    }
+   
+    .list-footer{
+        display:  flex;
+        justify-content: space-evenly;
+
+    }
+}

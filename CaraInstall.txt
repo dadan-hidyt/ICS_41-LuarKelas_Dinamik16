@@ -1,0 +1,21 @@
+#ICS41-Dinamik16
+@rafly firmansyah
+@dadan hidayat
+@ahmad hidayat
+
+----------------------------------------------------------------------
+|-----------------Cara Menginstall Aplikasi:-------------------------|
+----------------------------------------------------------------------
+
+1.ekstrak file ICS_41-LuarKelas_Dinamik16.rar di C://xampp/htdocs
+2.buka folder config
+3.buka file database.php dan isi nama db dengan luar_kelas
+4.buka phpmyadmin di browser lalu buat database baru dengan nama luar_kelas
+5.import database nama database nya luarkelas.sql
+6.aplikasi siap di jalankan 
+
+--terimakasih--
+
+Admin:
+Username:admin
+Password:admin

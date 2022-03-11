@@ -1,0 +1,385 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  list-style: none;
+  overflow:none;
+}
+:root{
+  --warna-utama:#00fa9a;
+  --warna-bg:#f5f5f5;
+}
+.btn.btn-post{
+  background-color: #f5a352;
+  outline:none;
+  color:#fff
+}
+.nav-link.f:hover{
+  opacity: .8;
+  color: #f5a352!important;
+}
+.btn.btn-post:focus{
+  box-shadow: none!important
+}
+.boxs-option{
+  display: flex;
+  align-items: center;
+}
+.bungkus{
+  padding: 6px;
+  
+  border-radius:40px;
+  background:#ebf2f7;
+
+}
+.btn:focus{
+  box-shadow: none;
+}
+.bungkus.kategori{
+  margin-bottom: 17px;
+  padding: 8px;
+}
+.select-category{
+  background-color: #00fa9a;
+}
+.btns.modal-button:focus{
+box-shadow: none;
+}
+.btn.modal-button:hover{
+  opacity: .8;
+}
+.navbar-brand{
+  font-size: 26px;
+  margin-left: 2%;
+}
+.navbar-toggler{
+  border:none;
+  margin-right: 2%;
+}
+
+.navbar-toggler:focus{
+  outline:none;
+}
+
+
+.dropdown-menu{
+  margin-left: -50px!important;
+}
+
+
+/*forum*/
+#forum{
+
+  width:100%;
+  height:auto;
+  margin-top: 40px;
+}
+.post .modal-content{
+  height:400px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+
+}
+.post .modal-body .textarea{
+  outline:none;
+
+  max-width: 450px;
+  min-width: 450px;
+  max-height: 140px;
+  min-height: 140px;
+  padding:10px;
+  border-radius: 4px;
+
+  border:2px solid;
+
+}
+.post .modal-header{
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.post .modal-header .post .modal-title{
+  font-size: 24px;
+}
+.post .modal-header span{
+  font-size: 14px;
+
+}
+.kategori{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.upload-file{
+  margin-left: 20px;
+  font-size: 14px;
+}
+.buat-postingan{
+    margin-top: 300px;
+}
+
+#kategori-pembahasan{
+  font-size: 14px;
+  padding:5px;
+  width:180px;
+  outline: none;
+  border-radius: 4px;
+  text-align: left;
+}
+.leaderboard{
+    display: none;
+}
+.populer-hastag{
+    display:none;
+}
+
+.searchbox.forum{
+    background-color: #ffffffdc;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px #dfdfdf;
+    width:100%;
+    border-radius: 5px;
+    padding:10px;
+    display: flex; 
+    align-items: center;   
+}
+.searchbox.forum .btn{
+ 
+    width:40px;
+    height:40px;
+    display: flex;
+    align-items: center;
+}
+.searchbox.forum .btn:hover{
+  color:white;
+    background-color: rgb(221, 221, 221);
+}
+
+.searchbox.forum i{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: -2px;
+}
+
+.searchbox.forum input{
+    border:none;
+    background-color: transparent;
+    width:100%;
+    margin-left: 10px;
+    padding:4px;
+    font-size: 14px;
+    outline:none;
+}
+
+
+/* timeline */
+.timeline{
+    margin-top: 40px;
+}
+
+/* postingan */
+.card-post{
+    padding:1vw 3vw;
+  width:100%;
+  margin-bottom: 50px;
+}
+.card-post .head-post{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.card-post .body-post{
+    font-size: 15px;
+}
+.komen-box{
+  margin-bottom: 10px;
+  background-color: rgba(236, 235, 235, 0.493);
+  padding:8px;
+  border-radius: 4px;
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+.komen-box input{
+  width:100%;
+  margin-left: 10px;
+  outline:none;
+  background-color: transparent;
+  border:none;
+  font-size: 12px;
+}
+.komen-box i{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.komen-box i:hover{
+  color:salmon;
+}
+.head-post{
+  display: flex;
+  align-items: center;
+}
+.head-post img{
+  border-radius:50%;
+  width:40px;
+  cursor: pointer;
+  margin-right: 10px;
+  
+}
+
+
+
+
+.timeline.forums ul li a{
+  color:#f5a352;
+}
+.timeline.forums ul li a.active{
+  background-color: #f5a352;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet version */
+@media (min-width: 360px) { 
+  
+.dropdown-menu{
+ margin-left: 0;
+}
+  .leaderboard{
+    display: none;
+  }
+  .dropdown-menu{
+    margin-left: 0;
+   }
+   .nav-link:hover::after{
+    display:none;
+
+  }
+  .buat-postingan .modal-button{
+    outline:none;
+    border:none;
+    position: fixed;
+    bottom:0;
+    right:0;
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+
+  .modal-body .textarea{
+    outline:none;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding:10px;
+    border-radius: 4px;
+  
+    border:2px solid;
+  
+  }
+ }
+
+
+
+/* Desktop Version */
+
+
+@media (min-width: 992px) {
+
+.navbar-brand{
+  margin-left: 0;
+}
+
+.nav-link:hover::after {
+  content: '';
+  background-color: var(--warna-utama) !important;
+  display: block;
+  height: 3px;
+  width: 10px;
+  margin: 0 auto;
+  margin-bottom: -14px;
+  color: #f5f5f5;
+
+}
+.nav-link.f:hover::after {
+  content: '';
+  background-color: #f5a352 !important;
+  display: block;
+  height: 3px;
+  width: 10px;
+  margin: 0 auto;
+  margin-bottom: -14px;
+  color: #f5f5f5;
+
+}
+
+.nav-link.forum:hover::after ,  .nav-link.i:hover::after{
+  display:none;
+
+}
+.buat-postingan{
+    margin-top: 0px;
+}
+
+
+.leaderboard{
+    padding:10px;
+    display: block;
+}
+.user-lead{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.populer-hastag{
+    padding:10px;
+    display: block;
+}
+
+.tags-populer ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* card-post */
+
+.card-post{
+
+    width:600px;
+
+}
+.buat-postingan .modal-button{
+
+  outline:none;
+  border:none;
+  position: relative;
+}
+}
+@media (max-width:550px){
+  .dropdown-menu{
+    margin-left: 0px !important;
+    width:100%;
+    margin-top: 10px;
+
+   }
+   .nav-link:hover::after{
+    display:none;
+
+  }
+}
