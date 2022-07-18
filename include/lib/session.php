@@ -9,7 +9,12 @@ class Session{
            return false;
        }
    }
-   //dapatkan session dengan argument
+
+    /***
+     * @param $sesname
+     * @return mixed|void
+     * mendapatkan session dari $_SESSION[index]
+     */
    function sessionGet($sesname){
        if(array_key_exists($sesname,$_SESSION)){
            if(isset($_SESSION[$sesname])){
