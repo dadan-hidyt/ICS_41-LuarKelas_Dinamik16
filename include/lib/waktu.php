@@ -4,9 +4,7 @@ function waktu($waktu){
 	date_default_timezone_set('asia/jakarta');
 	$dateSekarang = new DateTime();
 	$waktulalu = date_create($waktu);
-
 	$diff = $dateSekarang->diff($waktulalu);
-
 	if($diff->y > 0){
 		echo $diff->y .' Tahun yg Lalu';
 	}elseif($diff->m > 0){
@@ -22,7 +20,6 @@ function waktu($waktu){
 	}else{
 		echo 'Baru saja';
 	}
-
 }
 
 ?>
